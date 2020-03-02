@@ -8,7 +8,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     zsh \
     curl \
     ca-certificates \
-    git
+    git \
+    less
 
 RUN rm -rf /var/lib/apt/lists/*
 
