@@ -2,7 +2,7 @@ FROM kalilinux/kali-rolling
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
     sudo \
-    dnsutils
+    dnsutils \
     tmux \
     vim \
     zsh
