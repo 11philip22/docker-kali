@@ -1,7 +1,11 @@
 FROM kalilinux/kali-rolling
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
-    sudo
+    sudo \
+    dnsutils
+    tmux \
+    vim \
+    zsh
 
 RUN rm -rf /var/lib/apt/lists/*
 
