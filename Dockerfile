@@ -27,4 +27,4 @@ USER 1000
 RUN sh -c "$(curl -fsSL https://raw.githubusercontent.com/11philip22/oh-my-zsh/master/tools/install.sh)"
 
 WORKDIR /home/kali
-
+CMD tail -f /dev/null
