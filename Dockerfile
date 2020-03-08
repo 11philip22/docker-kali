@@ -12,7 +12,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     less \
     python3 \
     python3-pip \
-    nmap
+    nmap \
     neofetch
 
 RUN rm -rf /var/lib/apt/lists/*
