@@ -9,7 +9,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     curl \
     ca-certificates \
     git \
-    less
+    less \
+    python3 \
+    python3-pip
 
 RUN rm -rf /var/lib/apt/lists/*
 
@@ -25,4 +27,4 @@ USER 1000
 RUN sh -c "$(curl -fsSL https://raw.githubusercontent.com/11philip22/oh-my-zsh/master/tools/install.sh)"
 
 WORKDIR /home/kali
-CMD tail -f /dev/null
+
