@@ -12,6 +12,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     less \
     python3 \
     python3-pip \
+    python3-setuptools \
     nmap \
     neofetch
 
