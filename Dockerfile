@@ -18,6 +18,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 
 RUN rm -rf /var/lib/apt/lists/*
 
+RUN pip3 install --no-cache-dir \
+    ipython
+
 RUN chsh -s /usr/bin/zsh \
     && sh -c "$(curl -fsSL https://raw.githubusercontent.com/11philip22/oh-my-zsh/master/tools/install.sh)"
 
